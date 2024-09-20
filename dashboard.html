@@ -23,7 +23,8 @@
 <div class="btns flex justify-center items-center gap-12 mt-[20px]">
     <button class="btn btn-success" id="add-money">add money</button>
     <button class="btn btn-active btn-primary" id="cash-out">Cash out</button>
-</div>
+    <button class="btn btn-active btn-primary" id="transaction">Transaction id</button>
+  </div>
 
 <div class="main-card flex justify-center items-center mt-5 hidden" id="box-1">
 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -41,6 +42,7 @@
         <input type="password" id="enter-password" placeholder="password" class="input input-bordered" required />
     
       </div>
+    
       <div class="form-control mt-6">
         <button class="btn btn-primary" id="add-money-total">add money</button>
       </div>
@@ -76,7 +78,11 @@
     
     </div>
 
+<div class="box-3 flex flex-col justify-center items-center mt-6 hidden" id="box-3">
+<h1 class="text-[20px] font-bold">Transaction History</h1>
 
+
+</div>
     
   
     <script src="dashboard.js"></script>
