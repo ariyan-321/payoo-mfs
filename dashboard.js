@@ -39,6 +39,9 @@ document.getElementById("add-money-total").addEventListener("click",function(eve
         totalAmount+=NewEnterAmount
         document.getElementById("total-amount-value").innerHTML=totalAmount;
 }
+    else{
+        alert("your password is wrong")
+    }
 })
 
 
@@ -53,6 +56,9 @@ document.getElementById("cash-out-total").addEventListener("click",function(even
         let NewEnterAmount=Number(enterAmount)
         totalAmount-=NewEnterAmount
         document.getElementById("total-amount-value").innerHTML=totalAmount;
+}
+    else{
+    alert("your password is wrong")
 }
 })
 
