@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+<div class="logout-btn flex justify-end items-center- mt-10 mr-10">
+    <button class="btn btn-secoundary" id="log-out">Log Out</button>
+
+</div>
+
+<div class="total-amount flex justify-center items-center font-bold text-[40px] mt-[-60px]">
+
+<span id="total-amount-value" class="bg-gray-200 px-7 py-2 rounded-xl">1000</span>
+
+</div>
+
+<div class="btns flex justify-center items-center gap-12 mt-[20px]">
+    <button class="btn btn-success" id="add-money">add money</button>
+    <button class="btn btn-active btn-primary" id="cash-out">Cash out</button>
+</div>
+
+<div class="main-card flex justify-center items-center mt-5 hidden" id="box-1">
+<div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <form class="card-body">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">enter add money amount</span>
+        </label>
+        <input type="email" id="enter-amount" placeholder="enter amount" class="input input-bordered" required />
+      </div>
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text">Password</span>
+        </label>
+        <input type="password" id="enter-password" placeholder="password" class="input input-bordered" required />
+    
+      </div>
+      <div class="form-control mt-6">
+        <button class="btn btn-primary" id="add-money-total">add money</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+<div class="main-card-2 flex justify-center items-center mt-5 hidden" id="box-2">
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+        <form class="card-body">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">enter cash out amount</span>
+            </label>
+            <input type="email" placeholder="enter amount" class="input input-bordered" required />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Password</span>
+            </label>
+            <input type="password" placeholder="password" class="input input-bordered" required />
+        
+          </div>
+          <div class="form-control mt-6">
+            <button class="btn btn-primary" id="cash-out-total">cash out</button>
+          </div>
+        </form>
+      </div>
+    
+    </div>
+
+
+    
+  
+    <script src="dashboard.js"></script>
+
+
+
+</body>
+</html>
