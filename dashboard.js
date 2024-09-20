@@ -29,7 +29,7 @@ document.getElementById("add-money").addEventListener("click", function(event) {
 
 document.getElementById("add-money-total").addEventListener("click",function(event){
     event.preventDefault();
-    let amount = document.getElementById("total-amount-value").innerHTML;
+    let amount = document.getElementById("total-amount-value").innerText;
     let totalAmount = Number(amount);
 
     let enterAmount=document.getElementById("enter-amount").value;
@@ -47,7 +47,7 @@ document.getElementById("add-money-total").addEventListener("click",function(eve
 
 document.getElementById("cash-out-total").addEventListener("click",function(event){
     event.preventDefault();
-    let amount = document.getElementById("total-amount-value").innerHTML;
+    let amount = document.getElementById("total-amount-value").innerText;
     let totalAmount = Number(amount);
 
     let enterAmount=document.getElementById("enter-amount").value;
